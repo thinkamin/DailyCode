@@ -4,6 +4,7 @@ def gen_num1(n):
     '''
     gen num list without double num
     '''
+    random.seed(1)
     num_list=list(range(n))#[0,n-1]
     random.shuffle(num_list)
     return num_list
