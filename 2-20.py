@@ -1,5 +1,7 @@
 '''
 select sort upgrade
+step1:循环n次 每次从1：n-1中找到largest
+step2：交换位置
 '''
 import gen_num
 num_lst = gen_num.gen_num1(20)
