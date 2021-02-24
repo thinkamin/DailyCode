@@ -29,6 +29,7 @@ def merge(left,right):
         else:
             result.append(right[j])
             j+=1
+   # left[i:],right[j:] 总有一个是空的
     result +=left[i:] #将left剩下的放进去
     result +=right[j:] #将right剩下的放进去
     print(result)
