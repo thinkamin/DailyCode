@@ -19,4 +19,3 @@ def gen_num2(n):
 num_list = gen_num2(100)
 # print(num_list)
 
-
