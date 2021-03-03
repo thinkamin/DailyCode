@@ -1,19 +1,22 @@
 import gen_num
 
 num_lst = gen_num.gen_num1(20)
+'''
 def merge(left,right):
     i,j=0,0
     result = []
-    while i<len(left)-1 and j<len(right)-1:
+    while i<len(left) and j<len(right):
         if left[i]<right[j]:
             result.append(left[i])
-            i +=1
+            i +=1 #多运行了一次
         if left[i]>right[j]:
             result.append(right[j])
             j+=1
     result +=left[i:]
     result +=right[j:]
+    print(result)
     return result
+'''
 def mergesort(A):
     '''
     Args:
