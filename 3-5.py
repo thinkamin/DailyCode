@@ -24,7 +24,7 @@ def heapify(A,idx,maxIdx):
     if largest != idx:
         A[idx],A[largest]=A[largest],A[idx]
         heapify(A,largest,maxIdx)
-    # print(A)
+
 def heapsort(A):
     '''
     args:
@@ -34,6 +34,7 @@ def heapsort(A):
     buildheap(A)
     for i in [length-1-x for x in range(length)]:#[n-1,0]
         A[0],A[i]=A[i],A[0]
+        #根节点的左右孩子也是第2第3大的 把最底层的一个换到根节点 肯定会触发largest!=idx
         heapify(A,0,i)#make mistake
         print(i,A)
     return A
